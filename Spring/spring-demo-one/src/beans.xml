@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id = "request" class = "com.springdemo.RequestAPI"></bean>
+   <bean id = "India" class = "com.springdemo.India"> <constructor-arg  ref = "request" /></bean>
+   <bean id = "Russia" class = "com.springdemo.Russia"> <constructor-arg  ref = "request" /></bean>
+   <bean id = "China" class = "com.springdemo.China"> <constructor-arg  ref = "request" /></bean>
+   <bean id = "Czech" class = "com.springdemo.Czechoslovakia"> <constructor-arg  ref = "request" /></bean>
+   
+ </beans>
